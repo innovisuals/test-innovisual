@@ -28,20 +28,13 @@ const Index: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-[#FAF9F6]">
-      {/* Top gradient */}
-      <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent pointer-events-none z-10" />
-
-      {/* Bottom gradient */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
-
+    <div className="min-h-screen bg-white">
       <Navigation
         vanCreatieRef={vanCreatieRef}
         impactRef={impactRef}
         contactRef={contactRef}
       />
 
-      {/* Alles hieronder blijft gelijk */}
       <section className="min-h-screen flex flex-col justify-center items-center relative">
         <div className="flex-1 w-full flex items-center justify-center pb-12 pt-8">
           <div className="w-full max-w-5xl mx-auto px-4 flex justify-center items-center">
@@ -55,17 +48,35 @@ const Index: React.FC = () => {
         </div>
       </section>
 
-      <!-- ... alle andere secties blijven ongewijzigd -->
+      <section
+        ref={vanCreatieRef}
+        className={`section-container bg-gradient-to-b from-white to-[#F9F6EF] ${isMobile ? 'py-12' : 'py-24'}`}
+        id="van-creatie-tot-beleving"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          {/* bestaande content */}
+        </div>
+      </section>
+
+      <section
+        ref={impactRef}
+        className={`section-container ${isMobile ? 'py-12' : 'py-24'}`}
+        id="impact-door-innovatie"
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* bestaande content */}
+        </div>
+      </section>
 
       <section
         ref={contactRef}
-        className={`section-container ${isMobile ? "py-12" : "py-24"}`}
+        className={`section-container ${isMobile ? 'py-12' : 'py-24'}`}
         id="lets-talk"
       >
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2
             className={`font-bold mb-8 animate-fade-in ${
-              isMobile ? "text-5xl" : "text-3xl md:text-6xl"
+              isMobile ? 'text-5xl' : 'text-3xl md:text-6xl'
             }`}
           >
             LET'S TALK
@@ -76,7 +87,6 @@ const Index: React.FC = () => {
           >
             Samen innoveren.
           </p>
-
           <div className="max-w-2xl mx-auto">
             <p
               className="text-innovisual-muted mb-8 animate-fade-in text-lg"
