@@ -8,10 +8,13 @@ const VanCreatieTotBeleving: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#F9F6EF] to-white relative">
+      {/* Subtielere gradient overlay aan de bovenkant */}
+      <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-white via-white/80 to-transparent pointer-events-none z-10"></div>
+      
       <Navigation />
       
-      <main className="section-container items-center pt-32">
+      <main className="section-container items-center pt-32 relative z-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="flex flex-col">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 animate-fade-in text-left">Van Creatie tot Beleving</h2>
