@@ -98,7 +98,7 @@ const Logo: React.FC = () => {
 
   return (
     <div className="flex justify-center items-center w-full h-full">
-      <div className="w-full max-w-4xl">
+      <div className="w-full max-w-screen-xl mx-auto px-4">
         {!videoError ? (
           <video 
             ref={videoRef}
