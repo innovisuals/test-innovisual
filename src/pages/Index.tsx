@@ -19,7 +19,7 @@ const Index: React.FC = () => {
     document.title = "INNOVISUAL | 3D Visualisatie voor Restaurants";
   }, []);
 
-  return <div className="min-h-screen bg-white"> 
+  return <div className="min-h-screen bg-white">
       <Navigation vanCreatieRef={vanCreatieRef} impactRef={impactRef} contactRef={contactRef} />
       
       <section className="min-h-screen flex flex-col justify-center items-center relative">
@@ -222,9 +222,7 @@ const Index: React.FC = () => {
             <p className="text-lg font-medium mb-2 animate-fade-in italic text-innovisual-muted" style={{
             animationDelay: "100ms"
           }}>Samen innoveren.</p>
-            <p className="text-red-500 text-center">
-  TESTMODE: deze sectie komt van ChatGPT
-</p>
+            
             <div className="max-w-2xl mx-auto">
               <p className="text-innovisual-muted mb-8 animate-fade-in text-lg" style={{
               animationDelay: "200ms"
