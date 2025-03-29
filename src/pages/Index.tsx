@@ -44,7 +44,8 @@ const Index: React.FC = () => {
             {isMobile ?
           <>
                 <div className="flex flex-col">
-                    <h2 className="font-bold mb-14 animate-fade-in text-center md:text-left text-[t#5c899d] text-[#5c899d]">VAN CREATIE TOT BELEVING</h2>
+                  <h2 className="font-bold mb-12 animate-fade-in text-center md:text-left text-[#5c899d]">VAN CREATIE TOT BELEVING</h2>
+
                   
                   <div className="space-y-8 mt-4">
                     <div className="animate-fade-in" style={{
