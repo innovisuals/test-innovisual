@@ -8,9 +8,9 @@ const VanCreatieTotBeleving: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#F9F6EF] to-white relative">
+    <section className="min-h-screen w-full bg-[hsl(var(--ivory-white))] relative">
       {/* Subtielere gradient overlay aan de bovenkant */}
-      <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-white via-white/80 to-transparent pointer-events-none z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-white via-white/80 to-transparent pointer-events-none z-10"></section>
       
       <Navigation />
       
