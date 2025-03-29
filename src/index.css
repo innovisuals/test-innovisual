@@ -7,9 +7,9 @@
 @layer base {
   :root {
   --cool-teal: 197 27% 48%;       /* #5E899D */
-  --ivory-white: 48 100% 97%;  /* #FFFCEF */     /* #FFFCF0 */
+  --ivory-white: 51 100% 96%;     /* #FFFCEF */
 
-    --background: 48 100% 97%;
+    --background: var(--ivory-white);
     --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
