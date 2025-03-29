@@ -45,7 +45,7 @@ const LetsTalk: React.FC = () => {
         </div>
         
         <ContactForm />
-      </main>
+      </main></section>
     </div>
   );
 };
