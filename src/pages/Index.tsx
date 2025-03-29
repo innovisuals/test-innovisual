@@ -23,13 +23,13 @@ const Index: React.FC = () => {
     <>
       <Navigation vanCreatieRef={vanCreatieRef} impactRef={impactRef} contactRef={contactRef} />
 
-      <section className="w-full bg-[hsl(var(--ivory-white))]">
-        <div className="section-container py-24 text-center space-y-6">
-          <h2 className={`font-bold mb-8 animate-fade-in ${isMobile ? 'text-5xl' : 'text-3xl md:text-6xl'}`}>
+      <section className="w-full bg-white py-24 px-4">
+        <div className="section-container max-w-4xl mx-auto bg-[hsl(var(--ivory-white))] rounded-2xl shadow-md p-12 text-center space-y-6">
+          <h2 className={`font-bold animate-fade-in ${isMobile ? 'text-5xl' : 'text-3xl md:text-6xl'}`}>
             LET'S TALK
           </h2>
           <p
-            className="text-lg font-medium mb-2 animate-fade-in italic text-innovisual-muted"
+            className="text-lg font-medium animate-fade-in italic text-innovisual-muted"
             style={{ animationDelay: "100ms" }}
           >
             Samen innoveren.
@@ -37,7 +37,7 @@ const Index: React.FC = () => {
 
           <div className="max-w-2xl mx-auto">
             <p
-              className="text-innovisual-muted mb-8 animate-fade-in text-lg"
+              className="text-innovisual-muted animate-fade-in text-lg"
               style={{ animationDelay: "200ms" }}
             >
               Ontdek vrijblijvend wat INNOVISUAL voor u kan betekenen. Wij realiseren het concept en maken het u gemakkelijk.
