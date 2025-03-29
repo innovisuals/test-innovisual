@@ -17,7 +17,7 @@ const VanCreatieTotBeleving: React.FC = () => {
       <main className="section-container items-center pt-32 relative z-0">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="flex flex-col">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 animate-fade-in text-left" style={{ color: "#5c899d" }}>
+    <h2 className="text-3xl md:text-4xl font-bold mb-12 animate-fade-in text-left text-[#5c899d]">
   Van Creatie tot Beleving
 </h2>
             
