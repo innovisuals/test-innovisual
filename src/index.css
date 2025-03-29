@@ -6,11 +6,8 @@
 
 @layer base {
   :root {
-  --cool-teal: 197 27% 48%;       /* #5E899D */
-  --ivory-white: 51 100% 96%;     /* #FFFCEF */
-
-    --background: var(--ivory-white);
-    --foreground: 0 0% 10%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
@@ -239,4 +236,10 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
+}
+
+
+/* Toegevoegd: Achtergrondkleur hele pagina */
+body {
+  background-color: #FFFCEF;
 }
