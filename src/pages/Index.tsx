@@ -19,7 +19,7 @@ const Index: React.FC = () => {
     document.title = "INNOVISUAL | 3D Visualisatie voor Restaurants";
   }, []);
 
-  return <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white"> 
       <Navigation vanCreatieRef={vanCreatieRef} impactRef={impactRef} contactRef={contactRef} />
       
       <section className="min-h-screen flex flex-col justify-center items-center relative">
