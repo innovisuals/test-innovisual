@@ -6,8 +6,11 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+  --cool-teal: 197 27% 48%;       /* #5E899D */
+  --ivory-white: 48 100% 97%;  /* #FFFCEF */     /* #FFFCF0 */
+
+    --background: 48 100% 97%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
