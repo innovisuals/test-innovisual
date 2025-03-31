@@ -60,7 +60,7 @@
   }
   
   .navigation-link::after {
-    @apply content-[''] absolute w-full scale-x-0 h-0.5 bottom-0 left-0 bg-innovisual-accent origin-bottom-right transition-transform duration-300;
+    @apply content-[''] absolute w-full scale-x-0 h-0.5 bottom-0 left-0 bg-[#5c899d] origin-bottom-right transition-transform duration-300;
   }
   
   .navigation-link:hover::after {
@@ -76,13 +76,13 @@
   }
   
   .button-primary {
-    @apply bg-innovisual-accent text-white px-6 py-3 rounded-md font-medium transition-all shadow-md
+    @apply bg-[#5c899d] text-white px-6 py-3 rounded-md font-medium transition-all shadow-md
     hover:shadow-lg hover:translate-y-[-2px] active:translate-y-[0px] active:shadow-md;
   }
   
   .button-secondary {
-    @apply bg-white text-innovisual border border-innovisual px-6 py-3 rounded-md font-medium transition-all
-    hover:bg-innovisual-border hover:shadow-sm active:bg-white;
+    @apply bg-white text-[#5c899d] border border-[#5c899d] px-6 py-3 rounded-md font-medium transition-all
+    hover:bg-[#f0f4f6] hover:shadow-sm active:bg-white;
   }
 
   h2.text-3xl, h2.text-4xl {
@@ -121,7 +121,7 @@
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 25px solid #000;
+  border-top: 25px solid #5c899d;
   animation: blink 1.5s infinite;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -175,7 +175,7 @@
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 25px solid #000;
+  border-top: 25px solid #5c899d;
   animation: attention-blink 1s infinite;
   cursor: pointer;
   transition: transform 0.3s ease;

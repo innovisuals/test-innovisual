@@ -50,7 +50,7 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
           required
           placeholder="Naam"
-          className="w-full p-3 bg-white rounded-md border border-innovisual-border focus:outline-none focus:ring-2 focus:ring-innovisual-accent"
+          className="w-full p-3 bg-white rounded-md border border-innovisual-border focus:outline-none focus:ring-2 focus:ring-[#5c899d]"
         />
       </div>
       
@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
           required
           placeholder="Email"
-          className="w-full p-3 bg-white rounded-md border border-innovisual-border focus:outline-none focus:ring-2 focus:ring-innovisual-accent"
+          className="w-full p-3 bg-white rounded-md border border-innovisual-border focus:outline-none focus:ring-2 focus:ring-[#5c899d]"
         />
       </div>
       
@@ -74,7 +74,7 @@ const ContactForm: React.FC = () => {
           value={formData.company}
           onChange={handleChange}
           placeholder="Bedrijfsnaam"
-          className="w-full p-3 bg-white rounded-md border border-innovisual-border focus:outline-none focus:ring-2 focus:ring-innovisual-accent"
+          className="w-full p-3 bg-white rounded-md border border-innovisual-border focus:outline-none focus:ring-2 focus:ring-[#5c899d]"
         />
       </div>
       
@@ -87,14 +87,14 @@ const ContactForm: React.FC = () => {
           required
           placeholder="Let's talk :)"
           rows={5}
-          className="w-full p-3 bg-white rounded-md border border-innovisual-border focus:outline-none focus:ring-2 focus:ring-innovisual-accent resize-none"
+          className="w-full p-3 bg-white rounded-md border border-innovisual-border focus:outline-none focus:ring-2 focus:ring-[#5c899d] resize-none"
         />
       </div>
       
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-innovisual text-white py-3 rounded-md font-medium hover:bg-innovisual-light transition-colors flex items-center justify-center"
+        className="w-full bg-[#5c899d] text-white py-3 rounded-md font-medium hover:bg-[#4a7081] transition-colors flex items-center justify-center"
       >
         {isSubmitting ? (
           <>

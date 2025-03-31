@@ -98,8 +98,7 @@ const Navigation: React.FC<NavigationProps> = ({
           <button 
             onClick={() => scrollToSection(contactRef)} 
             className={cn(
-              "bg-innovisual text-white px-4 py-2 rounded-md text-sm font-semibold transition-all animate-fade-in", 
-              "hover:bg-innovisual-light"
+              "bg-[#5c899d] text-white px-4 py-2 rounded-md text-sm font-semibold transition-all animate-fade-in hover:bg-[#4a7081]"
             )} 
             style={{
               animationDelay: "300ms"
