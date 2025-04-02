@@ -1,3 +1,26 @@
+
+
+  const [isSticky, setIsSticky] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 100);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+import { useEffect, useState } from "react";
 import React, { useEffect, useRef } from "react";
 import Navigation from "@/components/Navigation";
 import Logo from "@/components/Logo";
@@ -19,7 +42,18 @@ const Index: React.FC = () => {
   }, []);
 
   return <div className="min-h-screen bg-white">
-      <Navigation vanCreatieRef={vanCreatieRef} impactRef={impactRef} contactRef={contactRef} />
+      
+      {/* Sticky MP4-logo */}
+      <div
+        className={[
+          "z-50 transition-all duration-500 ease-in-out hidden md:block",
+          isSticky && !isMobile ? "fixed top-4 left-4 w-20" : "absolute top-1/2 left-1/2 w-52 -translate-x-1/2 -translate-y-1/2"
+        ].join(" ")}
+      >
+        <video autoPlay muted loop playsInline className="w-full h-auto" src="/logo-loop.mp4" />
+      </div>
+
+<Navigation vanCreatieRef={vanCreatieRef} impactRef={impactRef} contactRef={contactRef} />
       
       <section className="min-h-screen flex flex-col justify-center items-center relative">
         <div className="flex-1 w-full flex items-center justify-center pb-12 pt-8">
