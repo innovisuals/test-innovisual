@@ -12,7 +12,7 @@ export default function Index() {
     const handleScroll = () => {
       setIsSticky(window.scrollY > 100);
     };
-    handleResize(); // initial check
+    handleResize();
 
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
@@ -23,17 +23,19 @@ export default function Index() {
     };
   }, []);
 
+  const logoClass = [
+    "z-50 transition-all duration-500 ease-in-out",
+    isSticky && !isMobile ? "fixed top-4 left-4 w-24" : "",
+    !isSticky && !isMobile
+      ? "absolute top-1/2 left-1/2 w-52 -translate-x-1/2 -translate-y-1/2"
+      : "",
+    isMobile ? "opacity-100" + (isSticky ? " opacity-0" : "") : ""
+  ].join(" ");
+
   return (
     <div className="bg-[#FFFCF0] text-[#111] font-sans scroll-smooth">
       {/* Sticky MP4-logo */}
-      <div
-        className={\`
-          z-50 transition-all duration-500 ease-in-out
-          \${isSticky && !isMobile ? "fixed top-4 left-4 w-24" : ""}
-          \${!isSticky && !isMobile ? "absolute top-1/2 left-1/2 w-52 -translate-x-1/2 -translate-y-1/2" : ""}
-          \${isMobile ? "opacity-100" + (isSticky ? " opacity-0" : "") : ""}
-        \`}
-      >
+      <div className={logoClass}>
         <video
           autoPlay
           muted
